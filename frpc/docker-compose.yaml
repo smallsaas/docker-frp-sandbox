@@ -4,6 +4,7 @@ services:
     image: zelejs/frpc:latest
     container_name: frpc
     restart: always
+    privileged: true
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./frpc.ini:/etc/frp/frpc.ini

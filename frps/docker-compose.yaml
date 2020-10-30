@@ -4,6 +4,7 @@ services:
     image: zelejs/frps:latest
     container_name: frps
     restart: always
+    privileged: true
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./frps.ini:/etc/frp/frps.ini
