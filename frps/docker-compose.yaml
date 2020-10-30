@@ -1,0 +1,10 @@
+version: "3"
+services:
+  frps:
+    image: zelejs/frps:latest
+    container_name: frps
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./frps.ini:/etc/frp/frps.ini
+    network_mode: bridge
