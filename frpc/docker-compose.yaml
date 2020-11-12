@@ -8,4 +8,4 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./frpc.ini:/etc/frp/frpc.ini
-    network_mode: bridge
+    network_mode: host
