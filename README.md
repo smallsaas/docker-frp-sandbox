@@ -12,16 +12,23 @@
 
 
 #### 服务端部署
+> 设置域名`raw.githubusercontent.com` IP
+```
+cat /etc/hosts
+151.101.64.133 raw.githubusercontent.com
+```
+> 执行
+```
+curl -sL https://raw.githubusercontent.com/smallsaas/frp/master/frps/docker-run.sh | bash -
+```
 > docker ps 查看是否部署成功
 >
 > 同时占用 7000/tcp, 8000/http 端口
-```
-$ curl -sL https://raw.githubusercontent.com/smallsaas/frp/master/frps/docker-run.sh | bash -
-```
+
 
 #### 客户端部署
 > 配置服务端地址 frpc.ini[common] server_addr=, 然后启动服务 `docker-compose up -d`
 ```
-$ curl -sL https://raw.githubusercontent.com/smallsaas/frp/master/frpc/docker-run.sh | bash -
-$ docker-compose up -d
+curl -sL https://raw.githubusercontent.com/smallsaas/frp/master/frpc/docker-run.sh | bash -
+docker-compose up -d
 ```
