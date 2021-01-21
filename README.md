@@ -1,9 +1,11 @@
-# docker-frp-sandbox
+# frp 内网穿透
+> 详细参考 [基于Frp的内网穿透搭建](https://github.com/kequandian/dev_docs/blob/master/ops/%E5%9F%BA%E4%BA%8EFrp%E7%9A%84%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%90%AD%E5%BB%BA.md) 说明
+>
 >**frpc：内网穿透客户端**
 >
 >**frps：内网穿透服务端**
 
-## 使用方法
+### 使用方法
 > 基于docker部署，前提是服务器预装 docker,docker-compose环境
 >
 > [基于CentOS系统的容器安装](https://github.com/kequandian/dev_docs/blob/master/ops/%E5%9F%BA%E4%BA%8ECentOS%E7%B3%BB%E7%BB%9F%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4.md)
