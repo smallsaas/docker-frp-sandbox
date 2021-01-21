@@ -5,7 +5,6 @@ services:
     container_name: frps
     restart: always
     privileged: true
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - ./frps.ini:/etc/frp/frps.ini
+    # volumes:
+    #   - ./frps.ini:/etc/frp/frps.ini
     network_mode: host
